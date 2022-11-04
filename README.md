@@ -8,7 +8,7 @@
 ## Step 2: Getting the python code
 1. Right click the request found in Step 1 and copy the curl command (as bash)
 2. Go to https://curlconverter.com/ and paste in your curl command.
-3. Convert the curl command into python code, then update the "cookies" and "headers" object you got from curlconverter
+3. Convert the curl command into python code, then update the "cookies" and "headers" object in `main.py` to the one you got from curlconverter
 
 ## Step 3: Run
 1. to run, just run main.py
