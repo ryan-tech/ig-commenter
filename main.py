@@ -30,8 +30,15 @@ def getRandomComment():
         'Youve got to get up every morning with determination if youre going to go to bed with satisfaction. - George Lorimer',
         'When you want something, all the universe conspires in helping you to achieve it. - Paulo Coelho'
     ]
+    commentBank += loadQuotes()
     random_index = random.randint(0,len(commentBank)-1)
     return commentBank[random_index]
+
+def loadQuotes():
+    returnArray = []
+    with open('inspirational_quotes.txt', 'r') as quotes:
+        returnArray.append(quotes.readline())
+    return returnArray
 
 def run():
     cookies = {
